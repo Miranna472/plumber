@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.husbent-for-hour {
+    color: blue;
+    font-family: arial;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.tel {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.contacts {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
