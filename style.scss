@@ -48,10 +48,12 @@ body {
 
 .work {
     text-align: center;
-    background-image: url(fon_section-with-man.jpg);
+    background-image: url(./img/man.jpg);
     background-size: cover;
     background-position: center;
-    border: 2px solid #000;
+    margin: 50px;
+    width: 100%;
+    height: 600px;
 }
 
 .man {
@@ -75,8 +77,6 @@ body {
 .man-hand {
     margin-top: 50px;
 }
-
-.about-work {}
 
 .Work-for-you {
     text-align: center;
