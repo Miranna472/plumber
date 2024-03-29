@@ -9,6 +9,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -26,13 +27,11 @@ body {
     color: $primary;
     font-size: 100px;
     font-weight: bold;
-    font-family: Verdana, sans-serif;
 }
 
 .tel {
     font-size: 50px;
     font-weight: bold;
-    font-family: Verdana, sans-serif;
 }
 
 .contacts {
@@ -60,7 +59,6 @@ body {
     font-size: 25px;
     font-weight: bold;
     padding-top: 100px;
-    font-family: Verdana, sans-serif;
     margin: 0 800px 0 100px;
 }
 
@@ -72,7 +70,6 @@ body {
     text-align: center;
     color: $primary;
     margin-left: 80px;
-    font-family: Verdana, sans-serif;
 }
 
 .container {
@@ -106,7 +103,6 @@ body {
     font-weight: 900;
     margin: 10px;
     letter-spacing: 1.5px;
-    font-family: Verdana, sans-serif;
 }
 
 .list {
