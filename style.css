@@ -26,9 +26,15 @@ body {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none !important;
+  border: none !important;
+}
+
 .tel {
   font-size: 50px;
   font-weight: bold;
+  margin: 15px;
 }
 
 .contacts {
@@ -41,6 +47,7 @@ body {
 .icon {
   width: 50px;
   height: 50px;
+  margin: 5px;
 }
 
 .work {
