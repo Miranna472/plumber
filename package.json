@@ -4,11 +4,29 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "prettier": "prettier --write \"**/*.scss\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.72.0"
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^13.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "npm run stylelint",
+      "npm run prettier"
+    ]
   }
 }

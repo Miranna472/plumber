@@ -1,0 +1,12 @@
+{
+  "singleQuote": false,
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
