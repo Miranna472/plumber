@@ -55,7 +55,7 @@ a {
 }
 
 .work {
-    background-image: url(./img/with-man.jpg);
+    background-image: url("./img/with-man.jpg");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -124,7 +124,6 @@ a {
 
 .footer {
     background-color: $primary-lighter;
-
 }
 
 .footer-container {
