@@ -11,6 +11,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .header {
@@ -122,14 +123,32 @@ a {
 
 .footer {
   background-color: #6ec6ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .logo-plumber {
   margin-left: 150px;
+}
+
+.tel-footer {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.footer-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
