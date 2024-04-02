@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "start": "npx http-server .",
     "sass": "sass --watch style.scss style.css",
     "stylelint": "npx stylelint \"**/*.scss\"",
     "prettier": "prettier --write \"**/*.scss\""
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
