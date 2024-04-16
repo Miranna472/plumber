@@ -166,7 +166,7 @@ main {
         padding: 1rem;
         gap: 1rem;
         background-color: $light;
-        color: $black;
+        color: $dark;
 
         @media (min-width: $screen-xs) {
             width: 50%;
@@ -182,7 +182,7 @@ main {
 
             @media (min-width: $screen-xs) {
                 background-color: $light;
-                color: $black;
+                color: $dark;
             }
 
             @media (min-width: $screen-md) {
@@ -223,35 +223,28 @@ footer {
     display: flex;
     justify-content: center;
 
-    .footer-container {
+    .container {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .footer-logo {
-        width: 50px;
-        height: 100px;
+    .logo {
+        max-width: 50px;
 
         @media (min-width: $screen-xs) {
-            width: 80px;
-            height: 100px;
+            max-width: 75px;
         }
 
         @media (min-width: $screen-md) {
-            width: 100px;
-            height: 100px;
-        }
-
-        @media (min-width: $screen-lg) {
-            width: 100px;
-            height: 150px;
+            max-width: 100px;
         }
     }
 
-    .tel-footer {
-        font-weight: bold;
-        margin: 15px;
+    .tel {
+        font-weight: 700;
+        gap: 1rem;
+        margin: 0.5rem;
         font-size: 1.5rem;
 
         @media (min-width: $screen-xs) {
@@ -261,11 +254,12 @@ footer {
         @media (min-width: $screen-md) {
             font-size: 2rem;
         }
-     }
+    }
 
-    .footer-text {
-        font-weight: bold;
-        margin: 15px;
+    .title {
+        font-weight: 700;
+        gap: 1rem;
+        margin: 0.5rem;
         color: $light;
         font-size: 1.5rem;
 
