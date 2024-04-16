@@ -28,8 +28,6 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        margin: 0.5rem;
 
         .logo {
             max-width: 50px;
@@ -222,6 +220,7 @@ footer {
     background-color: $primary-light;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .container {
         display: flex;
@@ -243,7 +242,6 @@ footer {
 
     .tel {
         font-weight: 700;
-        gap: 1rem;
         margin: 0.5rem;
         font-size: 1.5rem;
 
@@ -258,8 +256,6 @@ footer {
 
     .title {
         font-weight: 700;
-        gap: 1rem;
-        margin: 0.5rem;
         color: $light;
         font-size: 1.5rem;
 
