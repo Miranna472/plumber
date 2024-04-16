@@ -222,7 +222,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    .container {
+    .contacts {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -240,9 +240,8 @@ footer {
         }
     }
 
-    .tel {
+        .tel {
         font-weight: 700;
-        margin: 0.5rem;
         font-size: 1.5rem;
 
         @media (min-width: $screen-xs) {
