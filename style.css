@@ -24,8 +24,8 @@ header .logo-container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 16px;
+  gap: 16px;
 }
 header .logo-container .logo {
   max-width: 50px;
@@ -57,14 +57,14 @@ header .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 16px;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   header .contacts {
     flex-direction: row;
-    gap: 3rem;
+    gap: 48px;
   }
 }
 header .contacts .tel {
@@ -89,7 +89,7 @@ header .contacts .tel {
 }
 header .contacts .social-links-container {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 header .contacts .social-links-container .social-link .icon {
   width: 50px;
@@ -118,35 +118,39 @@ main .hero-section {
 }
 main .motto {
   text-align: center;
-  padding-left: 1rem;
-  text-shadow: 1px 1px 2px #000, 0 0 1em #2196f3, 0 0 0.2em #2196f3;
+  text-shadow: 3px 3px 6px #000, 0 0 16px #2196f3, 0 0 3px #2196f3;
   color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -200%);
   font-size: 1rem;
-  max-width: 10rem;
+  max-width: 200px;
 }
 @media (min-width: 768px) {
   main .motto {
     font-size: 1.5rem;
-    max-width: 25rem;
+    max-width: 400px;
   }
 }
 @media (min-width: 992px) {
   main .motto {
+    transform: translate(0, -100%);
     font-size: 1.5rem;
-    max-width: 20rem;
+    max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
   main .motto {
     font-size: 2rem;
-    max-width: 30rem;
+    max-width: 450px;
+    transform: none;
   }
 }
 main .main-title {
   color: #2196f3;
   text-align: center;
   text-wrap: balance;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   font-size: 1rem;
 }
 @media (min-width: 480px) {
@@ -168,8 +172,8 @@ main .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 16px;
+  gap: 16px;
   background-color: #fff;
   color: #000;
 }
@@ -226,14 +230,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 16px;
+  gap: 16px;
 }
 footer .contacts {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1rem;
+  gap: 16px;
 }
 footer .logo {
   max-width: 50px;
