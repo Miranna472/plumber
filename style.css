@@ -100,46 +100,46 @@ main {
   flex-grow: 1;
 }
 main .hero-section {
-  display: flex;
   padding: 10px;
-}
-main .photo-hero {
-  box-shadow: 0px -10px 100px 1px rgba(10, 10, 10, 0.22);
-  float: left;
+  background-image: url("./img/man.jpg");
+  background-position: center;
+  background-size: cover;
   height: 300px;
 }
-@media (min-width: 768px) {
-  main .photo-hero {
-    height: 300px;
-  }
-}
 @media (min-width: 992px) {
-  main .photo-hero {
+  main .hero-section {
     height: 400px;
   }
 }
 @media (min-width: 1200px) {
-  main .photo-hero {
-    height: 600px;
+  main .hero-section {
+    height: 500px;
   }
 }
 main .motto {
   text-align: center;
-  font-size: 1.5rem;
+  padding-left: 1rem;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #2196f3, 0 0 0.2em #2196f3;
+  color: #fff;
+  font-size: 1rem;
+  max-width: 10rem;
 }
 @media (min-width: 768px) {
   main .motto {
     font-size: 1.5rem;
+    max-width: 25rem;
   }
 }
 @media (min-width: 992px) {
   main .motto {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    max-width: 20rem;
   }
 }
 @media (min-width: 1200px) {
   main .motto {
     font-size: 2rem;
+    max-width: 30rem;
   }
 }
 main .main-title {
