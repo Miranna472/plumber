@@ -106,7 +106,7 @@ main {
     flex-grow: 1;
 
     .hero-section {
-        padding: 10px;
+        padding: 16px;
         background-image: url("./img/man.jpg");
         background-position: center;
         background-size: cover;
@@ -128,9 +128,8 @@ main {
             0 0 16px $primary,
             0 0 3px $primary;
         color: $light;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -200%);
+        display: flex;
+        align-items: center;
         font-size: 1rem;
         max-width: 200px;
 
@@ -141,15 +140,14 @@ main {
         }
 
         @media (min-width: $screen-md) {
-            transform: translate(0, -100%);
-            font-size: 1.5rem;
+            font-size: 2rem;
             max-width: 450px;
         }
 
         @media (min-width: $screen-lg) {
-            font-size: 2rem;
+            font-size: 2.5rem;
             max-width: 450px;
-            transform: none;
+           
         }
     }
 

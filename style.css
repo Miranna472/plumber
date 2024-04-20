@@ -100,7 +100,7 @@ main {
   flex-grow: 1;
 }
 main .hero-section {
-  padding: 10px;
+  padding: 16px;
   background-image: url("./img/man.jpg");
   background-position: center;
   background-size: cover;
@@ -120,9 +120,8 @@ main .motto {
   text-align: center;
   text-shadow: 3px 3px 6px #000, 0 0 16px #2196f3, 0 0 3px #2196f3;
   color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -200%);
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   max-width: 200px;
 }
@@ -134,16 +133,14 @@ main .motto {
 }
 @media (min-width: 992px) {
   main .motto {
-    transform: translate(0, -100%);
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
   main .motto {
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width: 450px;
-    transform: none;
   }
 }
 main .main-title {
