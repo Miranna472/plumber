@@ -104,6 +104,8 @@ main .hero-section {
   background-image: url("./img/man.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
   height: 300px;
 }
 @media (min-width: 992px) {
@@ -113,15 +115,13 @@ main .hero-section {
 }
 @media (min-width: 1200px) {
   main .hero-section {
-    height: 500px;
+    height: 600px;
   }
 }
 main .motto {
   text-align: center;
   text-shadow: 3px 3px 6px #000, 0 0 16px #2196f3, 0 0 3px #2196f3;
   color: #fff;
-  display: flex;
-  align-items: center;
   font-size: 1rem;
   max-width: 200px;
 }
@@ -140,13 +140,13 @@ main .motto {
 @media (min-width: 1200px) {
   main .motto {
     font-size: 2.5rem;
-    max-width: 450px;
   }
 }
 main .main-title {
   color: #2196f3;
   text-align: center;
   text-wrap: balance;
+  text-transform: uppercase;
   margin-bottom: 16px;
   font-size: 1rem;
 }

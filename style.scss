@@ -1,5 +1,6 @@
 @import "colors";
 @import "breakpoint";
+@import "offsets";
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@
 html,
 body {
     height: 100%;
-    margin: 0;
+    margin: $zero;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,8 +29,8 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 16px;
-        gap: 16px;
+        padding: $default-offset;
+        gap: $default-offset;
 
         .logo {
             max-width: 50px;
@@ -45,7 +46,7 @@ header {
 
         .title {
             color: $primary;
-            margin: 0;
+            margin: $zero;
             font-weight: 700;
             font-size: 2rem;
             text-wrap: balance;
@@ -61,18 +62,18 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16px;
+        padding: $default-offset;
         flex-direction: column;
-        gap: 16px;
+        gap: $default-offset;
 
         @media (min-width: $screen-sm) {
             flex-direction: row;
-            gap: 48px;
+            gap: $default-offset*3;
         }
 
         .tel {
             font-weight: 700;
-            margin: 0;
+            margin: $zero;
             font-size: 1.5rem;
 
             @media (min-width: $screen-xs) {
@@ -90,7 +91,7 @@ header {
 
         .social-links-container {
             display: flex;
-            gap: 16px;
+            gap: $default-offset;
 
             .social-link {
                 .icon {
@@ -106,10 +107,12 @@ main {
     flex-grow: 1;
 
     .hero-section {
-        padding: 16px;
+        padding: $default-offset;
         background-image: url("./img/man.jpg");
         background-position: center;
         background-size: cover;
+        display: flex;
+        align-items: center;
         height: 300px;
 
         @media (min-width: $screen-md) {
@@ -117,7 +120,7 @@ main {
         }
 
         @media (min-width: $screen-lg) {
-            height: 500px;
+            height: 600px;
         }
     }
 
@@ -128,8 +131,6 @@ main {
             0 0 16px $primary,
             0 0 3px $primary;
         color: $light;
-        display: flex;
-        align-items: center;
         font-size: 1rem;
         max-width: 200px;
 
@@ -146,8 +147,7 @@ main {
 
         @media (min-width: $screen-lg) {
             font-size: 2.5rem;
-            max-width: 450px;
-           
+                    
         }
     }
 
@@ -155,7 +155,8 @@ main {
         color: $primary;
         text-align: center;
         text-wrap: balance;
-        margin-bottom: 16px;
+        text-transform: uppercase;
+        margin-bottom: $default-offset;
         font-size: 1rem;
 
         @media (min-width: $screen-xs) {
@@ -177,8 +178,8 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 16px;
-        gap: 16px;
+        padding: $default-offset;
+        gap: $default-offset;
         background-color: $light;
         color: $dark;
 
@@ -222,7 +223,7 @@ main {
         .title {
             text-align: center;
             font-weight: 400;
-            margin: 0;
+            margin: $zero;
             font-size: 0.8rem;
 
             @media (min-width: $screen-xs) {
@@ -237,14 +238,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 16px;
+    padding: $default-offset;
+    gap: $default-offset;
 
     .contacts {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 16px;
+        gap: $default-offset;
     }
 
     .logo {
