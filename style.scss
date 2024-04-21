@@ -9,7 +9,7 @@
 html,
 body {
     height: 100%;
-    margin: $zero;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -46,7 +46,7 @@ header {
 
         .title {
             color: $primary;
-            margin: $zero;
+            margin: 0;
             font-weight: 700;
             font-size: 2rem;
             text-wrap: balance;
@@ -68,12 +68,12 @@ header {
 
         @media (min-width: $screen-sm) {
             flex-direction: row;
-            gap: $default-offset*3;
+            gap: $default-offset * 3;
         }
 
         .tel {
             font-weight: 700;
-            margin: $zero;
+            margin: 0;
             font-size: 1.5rem;
 
             @media (min-width: $screen-xs) {
@@ -137,7 +137,6 @@ main {
         @media (min-width: $screen-sm) {
             font-size: 1.5rem;
             max-width: 400px;
-
         }
 
         @media (min-width: $screen-md) {
@@ -147,7 +146,6 @@ main {
 
         @media (min-width: $screen-lg) {
             font-size: 2.5rem;
-                    
         }
     }
 
@@ -157,6 +155,7 @@ main {
         text-wrap: balance;
         text-transform: uppercase;
         margin-bottom: $default-offset;
+        margin-top: $default-offset;
         font-size: 1rem;
 
         @media (min-width: $screen-xs) {
@@ -223,7 +222,7 @@ main {
         .title {
             text-align: center;
             font-weight: 400;
-            margin: $zero;
+            margin: 0;
             font-size: 0.8rem;
 
             @media (min-width: $screen-xs) {
@@ -285,6 +284,5 @@ footer {
         @media (min-width: $screen-md) {
             font-size: 2rem;
         }
-
     }
 }
