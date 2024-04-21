@@ -100,21 +100,23 @@ main {
   flex-grow: 1;
 }
 main .hero-section {
-  padding: 16px;
   background-image: url("./img/man.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
+  padding: 16px;
   height: 300px;
 }
 @media (min-width: 992px) {
   main .hero-section {
+    padding: 32px;
     height: 400px;
   }
 }
 @media (min-width: 1200px) {
   main .hero-section {
+    padding: 48px;
     height: 600px;
   }
 }
@@ -123,37 +125,20 @@ main .motto {
   text-shadow: 3px 3px 6px #000, 0 0 16px #2196f3, 0 0 3px #2196f3;
   color: #fff;
   font-size: 1rem;
-  max-width: 200px;
 }
 @media (min-width: 768px) {
   main .motto {
     font-size: 1.5rem;
-    max-width: 400px;
   }
 }
 @media (min-width: 992px) {
   main .motto {
     font-size: 2rem;
-    max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
   main .motto {
     font-size: 2.5rem;
-  }
-}
-main .main-title {
-  color: #2196f3;
-  text-align: center;
-  text-wrap: balance;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  font-size: 1rem;
-}
-@media (min-width: 480px) {
-  main .main-title {
-    font-size: 2rem;
   }
 }
 main .cards-container {
@@ -170,8 +155,8 @@ main .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  gap: 16px;
+  padding: 32px;
+  gap: 32px;
   background-color: #fff;
   color: #000;
 }
@@ -213,13 +198,13 @@ main .card .icon {
 }
 main .card .title {
   text-align: center;
-  font-weight: 400;
+  text-wrap: balance;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 @media (min-width: 480px) {
   main .card .title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
