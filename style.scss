@@ -1,5 +1,6 @@
 @import "colors";
 @import "breakpoint";
+@import "offsets";
 
 * {
     box-sizing: border-box;
@@ -28,8 +29,8 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        gap: 1rem;
+        padding: $default-offset;
+        gap: $default-offset;
 
         .logo {
             max-width: 50px;
@@ -61,13 +62,13 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: $default-offset;
         flex-direction: column;
-        gap: 1rem;
+        gap: $default-offset;
 
         @media (min-width: $screen-sm) {
             flex-direction: row;
-            gap: 3rem;
+            gap: $default-offset * 3;
         }
 
         .tel {
@@ -90,7 +91,7 @@ header {
 
         .social-links-container {
             display: flex;
-            gap: 1rem;
+            gap: $default-offset;
 
             .social-link {
                 .icon {
@@ -105,36 +106,46 @@ header {
 main {
     flex-grow: 1;
 
-    .work {
+    .hero-section {
+        padding: $default-offset;
         background-image: url("./img/man.jpg");
-        background-size: cover;
         background-position: center;
-        height: 400px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        height: 300px;
 
         @media (min-width: $screen-md) {
+            height: 400px;
+        }
+
+        @media (min-width: $screen-lg) {
             height: 600px;
         }
     }
 
-    .text-about-us {
+    .motto {
         text-align: center;
-        padding-top: 100px;
-        margin: 0 300px 0 10px;
+        text-shadow:
+            3px 3px 6px $dark,
+            0 0 16px $primary,
+            0 0 3px $primary;
+        color: $light;
         font-size: 1rem;
+        max-width: 200px;
 
         @media (min-width: $screen-sm) {
-            margin: 0 500px 0 30px;
             font-size: 1.5rem;
+            max-width: 400px;
         }
 
         @media (min-width: $screen-md) {
-            margin: 0 600px 0 50px;
             font-size: 2rem;
+            max-width: 450px;
         }
 
         @media (min-width: $screen-lg) {
-            margin: 0 600px 0 50px;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -142,7 +153,9 @@ main {
         color: $primary;
         text-align: center;
         text-wrap: balance;
-        margin-bottom: 1rem;
+        text-transform: uppercase;
+        margin-bottom: $default-offset;
+        margin-top: $default-offset;
         font-size: 1rem;
 
         @media (min-width: $screen-xs) {
@@ -164,8 +177,8 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
-        gap: 1rem;
+        padding: $default-offset;
+        gap: $default-offset;
         background-color: $light;
         color: $dark;
 
@@ -224,14 +237,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    gap: 1rem;
+    padding: $default-offset;
+    gap: $default-offset;
 
     .contacts {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: $default-offset;
     }
 
     .logo {
@@ -271,6 +284,5 @@ footer {
         @media (min-width: $screen-md) {
             font-size: 2rem;
         }
-
     }
 }
