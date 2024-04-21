@@ -1,6 +1,9 @@
 $primary: #2196f3;
 $primary-light: lighten(saturate(adjust-hue($primary, -3), 10.26), 17.45);
+$primary-dark: darken($primary, 10);
 $secondary: #ec9706;
 $secondary-light: lighten($secondary, 10%);
 $light: #fff;
 $dark: #000;
+
+$cta-link-color: $primary-dark;

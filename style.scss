@@ -1,6 +1,7 @@
 @import "colors";
 @import "breakpoint";
 @import "offsets";
+@import "mixins";
 
 * {
     box-sizing: border-box;
@@ -111,7 +112,9 @@ main {
         background-position: center;
         background-size: cover;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: $default-offset * 2;
         padding: $default-offset;
         height: 300px;
 
@@ -127,7 +130,6 @@ main {
     }
 
     .motto {
-        text-align: center;
         text-shadow:
             3px 3px 6px $dark,
             0 0 16px $primary,
@@ -135,16 +137,84 @@ main {
         color: $light;
         font-size: 1rem;
 
-        @media (min-width: $screen-sm) {
+        @media (min-width: $screen-xs) {
             font-size: 1.5rem;
         }
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-sm) {
             font-size: 2rem;
         }
 
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-md) {
             font-size: 2.5rem;
+        }
+    }
+
+    .cta-link {
+        display: inline-flex;
+        position: relative;
+        color: $light;
+        background-color: $cta-link-color;
+        text-shadow: 0 1px darken($cta-link-color, 20);
+        border-width: 1px;
+        border-style: solid;
+        border-color: darken($cta-link-color, 10) darken($cta-link-color, 15) darken($cta-link-color, 15);
+        background-image: linear-gradient(to bottom, rgba($light, 0.3), rgba($light, 0) 50%, rgba($dark, 0.12) 51%, rgba($dark, 0.04));
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 4px;
+        padding: calc($default-offset / 1.5) $default-offset;
+
+        @media (min-width: $screen-xs) {
+            font-size: 1.25rem;
+            border-radius: 6px;
+        }
+
+        @media (min-width: $screen-sm) {
+            font-size: 1.5rem;
+            border-radius: 8px;
+            padding: $default-offset $default-offset * 2;
+        }
+
+        @media (min-width: $screen-md) {
+            font-size: 1.75rem;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 4px;
+            background: transparent;
+            @include box-shadow(inset 0 0 7px rgba($light, 0.5));
+        }
+
+        &:hover, &:active, &:focus {
+            outline: 0;
+            color: $light;
+
+            &:before {
+                content: "";
+                outline: 0;
+            }
+        }
+
+        &:hover {
+            background-color: darken(saturate($cta-link-color, 5), 4);
+        }
+
+        &:active {
+            text-shadow: 0 -1px darken($cta-link-color, 20%);
+            border-color: darken($cta-link-color, 25) darken($cta-link-color, 20) darken($cta-link-color, 10);
+            @include box-shadow(inset 0 1px 3px rgba($dark, 0.2), 0 1px rgba($light, 0.4));
+
+            &:before {
+                content: "";
+                @include box-shadow(inset 0 0 3px rgba($dark, 0.2), 0 1px rgba($light, 0.4));
+            }
         }
     }
 
