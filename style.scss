@@ -107,19 +107,21 @@ main {
     flex-grow: 1;
 
     .hero-section {
-        padding: $default-offset;
         background-image: url("./img/man.jpg");
         background-position: center;
         background-size: cover;
         display: flex;
         align-items: center;
+        padding: $default-offset;
         height: 300px;
 
         @media (min-width: $screen-md) {
+            padding: $default-offset * 2;
             height: 400px;
         }
 
         @media (min-width: $screen-lg) {
+            padding: $default-offset * 3;
             height: 600px;
         }
     }
@@ -132,34 +134,17 @@ main {
             0 0 3px $primary;
         color: $light;
         font-size: 1rem;
-        max-width: 200px;
 
         @media (min-width: $screen-sm) {
             font-size: 1.5rem;
-            max-width: 400px;
         }
 
         @media (min-width: $screen-md) {
             font-size: 2rem;
-            max-width: 450px;
         }
 
         @media (min-width: $screen-lg) {
             font-size: 2.5rem;
-        }
-    }
-
-    .main-title {
-        color: $primary;
-        text-align: center;
-        text-wrap: balance;
-        text-transform: uppercase;
-        margin-bottom: $default-offset;
-        margin-top: $default-offset;
-        font-size: 1rem;
-
-        @media (min-width: $screen-xs) {
-            font-size: 2rem;
         }
     }
 
@@ -177,8 +162,8 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: $default-offset;
-        gap: $default-offset;
+        padding: $default-offset * 2;
+        gap: $default-offset * 2;
         background-color: $light;
         color: $dark;
 
@@ -221,12 +206,12 @@ main {
 
         .title {
             text-align: center;
-            font-weight: 400;
+            text-wrap: balance;
             margin: 0;
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             @media (min-width: $screen-xs) {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
     }
