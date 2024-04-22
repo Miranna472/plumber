@@ -34,15 +34,7 @@ header {
         gap: $default-offset;
 
         .logo {
-            max-width: 50px;
-
-            @media (min-width: $screen-xs) {
-                max-width: 75px;
-            }
-
-            @media (min-width: $screen-md) {
-                max-width: 100px;
-            }
+            @include logo;
         }
 
         .title {
@@ -138,9 +130,10 @@ main {
 
     .motto {
         text-shadow:
-            3px 3px 6px $dark,
-            0 0 16px $primary,
-            0 0 3px $primary;
+            -1px -1px 1px rgba($dark, 0.5),
+            -1px 1px 1px rgba($dark, 0.5),
+            1px -1px 1px rgba($dark, 0.5),
+            1px 1px 1px rgba($dark, 0.5);
         color: $light;
         font-size: 1rem;
 
@@ -327,16 +320,8 @@ footer {
     }
 
     .logo {
+        @include logo;
         filter: invert(39%) sepia(70%) saturate(4173%) hue-rotate(189deg) brightness(75%) contrast(90%);
-        max-width: 50px;
-
-        @media (min-width: $screen-xs) {
-            max-width: 75px;
-        }
-
-        @media (min-width: $screen-md) {
-            max-width: 100px;
-        }
     }
 
     .tel {
