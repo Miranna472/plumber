@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
 
 header .logo-container {
@@ -41,7 +41,7 @@ header .logo-container .logo {
   }
 }
 header .logo-container .title {
-  color: #2196f3;
+  color: #2196F3;
   margin: 0;
   font-weight: 700;
   font-size: 2rem;
@@ -53,7 +53,7 @@ header .logo-container .title {
   }
 }
 header .contacts {
-  background-color: #ec9706;
+  background-color: #EC9706;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,9 +91,18 @@ header .contacts .social-links-container {
   display: flex;
   gap: 16px;
 }
+header .contacts .social-links-container .social-link {
+  display: inline-flex;
+}
 header .contacts .social-links-container .social-link .icon {
   width: 50px;
   height: 50px;
+}
+@media (min-width: 992px) {
+  header .contacts .social-links-container .social-link .icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 main {
@@ -123,8 +132,8 @@ main .hero-section {
   }
 }
 main .motto {
-  text-shadow: 3px 3px 6px #000, 0 0 16px #2196f3, 0 0 3px #2196f3;
-  color: #fff;
+  text-shadow: 3px 3px 6px #000, 0 0 16px #2196F3, 0 0 3px #2196F3;
+  color: #FFF;
   font-size: 1rem;
 }
 @media (min-width: 480px) {
@@ -145,7 +154,7 @@ main .motto {
 main .cta-link {
   display: inline-flex;
   position: relative;
-  color: #fff;
+  color: #FFF;
   background-color: #0c7cd5;
   text-shadow: 0 1px #064475;
   border-width: 1px;
@@ -189,7 +198,7 @@ main .cta-link:before {
 }
 main .cta-link:hover, main .cta-link:active, main .cta-link:focus {
   outline: 0;
-  color: #fff;
+  color: #FFF;
 }
 main .cta-link:hover:before, main .cta-link:active:before, main .cta-link:focus:before {
   content: "";
@@ -225,7 +234,7 @@ main .card {
   align-items: center;
   padding: 32px;
   gap: 32px;
-  background-color: #fff;
+  background-color: #FFF;
   color: #000;
 }
 @media (min-width: 480px) {
@@ -238,31 +247,44 @@ main .card {
     width: 33.3333333%;
   }
 }
+main .card .icon {
+  width: 50px;
+  height: 50px;
+  fill: #000;
+}
 main .card:nth-of-type(odd) {
   background-color: #faad2b;
-  color: #fff;
+  color: #FFF;
+}
+main .card:nth-of-type(odd) .icon {
+  fill: #FFF;
 }
 @media (min-width: 480px) {
   main .card:nth-of-type(odd) {
-    background-color: #fff;
+    background-color: #FFF;
     color: #000;
+  }
+  main .card:nth-of-type(odd) .icon {
+    fill: #000;
   }
 }
 @media (min-width: 992px) {
   main .card:nth-of-type(odd) {
     background-color: #faad2b;
-    color: #fff;
+    color: #FFF;
+  }
+  main .card:nth-of-type(odd) .icon {
+    fill: #FFF;
   }
 }
 @media (min-width: 480px) and (max-width: 991px) {
   main .card:nth-of-type(1), main .card:nth-of-type(4), main .card:nth-of-type(5) {
     background-color: #faad2b;
-    color: #fff;
+    color: #FFF;
   }
-}
-main .card .icon {
-  width: 50px;
-  height: 50px;
+  main .card:nth-of-type(1) .icon, main .card:nth-of-type(4) .icon, main .card:nth-of-type(5) .icon {
+    fill: #FFF;
+  }
 }
 main .card .title {
   text-align: center;
@@ -291,6 +313,7 @@ footer .contacts {
   gap: 16px;
 }
 footer .logo {
+  filter: invert(39%) sepia(70%) saturate(4173%) hue-rotate(189deg) brightness(75%) contrast(90%);
   max-width: 50px;
 }
 @media (min-width: 480px) {
@@ -319,7 +342,7 @@ footer .tel {
 }
 footer .title {
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   font-size: 1.5rem;
 }
 @media (min-width: 480px) {

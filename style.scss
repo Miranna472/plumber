@@ -95,9 +95,16 @@ header {
             gap: $default-offset;
 
             .social-link {
+                display: inline-flex;
+
                 .icon {
                     width: 50px;
                     height: 50px;
+
+                    @media (min-width: $screen-md) {
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
             }
         }
@@ -245,18 +252,36 @@ main {
             width: 33.3333333%;
         }
 
+        .icon {
+            width: 50px;
+            height: 50px;
+            fill: $dark;
+        }
+
         &:nth-of-type(odd) {
             background-color: $secondary-light;
             color: $light;
 
+            .icon {
+                fill: $light;
+            }
+
             @media (min-width: $screen-xs) {
                 background-color: $light;
                 color: $dark;
+
+                .icon {
+                    fill: $dark;
+                }
             }
 
             @media (min-width: $screen-md) {
                 background-color: $secondary-light;
                 color: $light;
+
+                .icon {
+                    fill: $light;
+                }
             }
         }
 
@@ -266,12 +291,11 @@ main {
             @media (min-width: $screen-xs) and (max-width: ($screen-md - 1)) {
                 background-color: $secondary-light;
                 color: $light;
-            }
-        }
 
-        .icon {
-            width: 50px;
-            height: 50px;
+                .icon {
+                    fill: $light;
+                }
+            }
         }
 
         .title {
@@ -303,6 +327,7 @@ footer {
     }
 
     .logo {
+        filter: invert(39%) sepia(70%) saturate(4173%) hue-rotate(189deg) brightness(75%) contrast(90%);
         max-width: 50px;
 
         @media (min-width: $screen-xs) {
