@@ -29,6 +29,7 @@ header .logo-container {
 }
 header .logo-container .logo {
   max-width: 50px;
+  height: auto;
 }
 @media (min-width: 480px) {
   header .logo-container .logo {
@@ -314,6 +315,7 @@ footer .contacts {
 }
 footer .logo {
   max-width: 50px;
+  height: auto;
   filter: invert(39%) sepia(70%) saturate(4173%) hue-rotate(189deg) brightness(75%) contrast(90%);
 }
 @media (min-width: 480px) {
