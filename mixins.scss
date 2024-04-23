@@ -1,5 +1,4 @@
-@import "colors";
-@import "breakpoint";
+@import "variables";
 
 @mixin box-shadow($shadows...) {
   -webkit-box-shadow: $shadows;
