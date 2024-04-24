@@ -25,6 +25,7 @@
 
 @mixin logo {
   max-width: 50px;
+  height: auto;
 
   @media (min-width: $screen-xs) {
     max-width: 75px;
